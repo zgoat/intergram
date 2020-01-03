@@ -19,7 +19,7 @@ export const desktopClosedWrapperStyleChat = {
     minWidth: '400px',
     boxSizing: 'content-box',
     overflow: 'hidden',
-    minHeight: '120px'
+    minHeight: '90px'
 };
 
 export const mobileClosedWrapperStyle = {
@@ -47,7 +47,7 @@ export const mobileOpenWrapperStyle = {
 };
 
 export const desktopTitleStyle = {
-    height: '40px',
+    height: '10px',
     lineHeight: '30px',
     fontSize: '20px',
     display: 'flex',

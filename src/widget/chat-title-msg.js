@@ -15,10 +15,10 @@ export default class ChatTitleMsg extends Component {
                         position: 'absolute',
                         fontSize: '14px',
                         top: 0,
-                        right: '130px',
+                        right: '90px',
                         marginTop: '23px',
                         borderRadius: '5px',
-                        padding: '15px 20px',
+                        padding: '8px 10px',
                         boxShadow: '#8e8d8d -3px 2px 20px',
                     }}
                 >
