@@ -43,7 +43,7 @@ export default class ChatTitleMsg extends Component {
                         display: 'block',
                         position: 'absolute',
                         top: '10px',
-                        right: '40px',
+                        right: '10px',
                         height: '60px',
                         width: '60px',
                         borderRadius: '999px',
