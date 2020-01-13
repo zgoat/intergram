@@ -47,7 +47,7 @@ export const mobileOpenWrapperStyle = {
 };
 
 export const desktopTitleStyle = {
-    height: '10px',
+    height: '40px',
     lineHeight: '30px',
     fontSize: '20px',
     display: 'flex',
