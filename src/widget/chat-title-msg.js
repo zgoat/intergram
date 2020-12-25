@@ -23,18 +23,6 @@ export default class ChatTitleMsg extends Component {
                     }}
                 >
                     {conf.introMessage}
-                    <div
-                        style={{
-                            width: 0,
-                            height: 0, 
-                            position: 'absolute',
-                            top: '12px',
-                            right: '-10px',
-                            borderTop: '10px solid transparent',
-                            borderBottom: '10px solid transparent',
-                            borderLeft: '10px solid '+conf.mainColor
-                        }}
-                    />
                 </div>
             </div>
         );
