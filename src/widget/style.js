@@ -19,7 +19,7 @@ export const desktopClosedWrapperStyleChat = {
     minWidth: '400px',
     boxSizing: 'content-box',
     overflow: 'hidden',
-    minHeight: '90px'
+    minHeight: '50px'
 };
 
 export const mobileClosedWrapperStyle = {

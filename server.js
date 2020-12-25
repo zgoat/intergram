@@ -26,15 +26,18 @@ app.post('/hook', function(req, res){
                 "Your unique chat id is `" + chatId + "`\n" +
                 "Use it to link between the embedded chat and this telegram chat",
                 "Markdown");
-        } else if (reply) {
+        }
+		else if (reply) {
             let replyText = reply.text || "";
             let userId = replyText.split(':')[0];
             io.emit(chatId + "-" + userId, {name, text, from: 'admin'});
-        } else if (text){
+        }
+		else if (text){
             io.emit(chatId, {name, text, from: 'admin'});
         }
 
-    } catch (e) {
+    }
+	catch (e) {
         console.error("hook error", e, req.body);
     }
     res.statusCode = 200;

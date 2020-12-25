@@ -2,7 +2,6 @@ import { h, Component } from 'preact';
 import ChatFrame from './chat-frame';
 import ChatFloatingButton from './chat-floating-button';
 import ChatTitleMsg from './chat-title-msg';
-import ArrowIcon from './arrow-icon';
 import {
     desktopTitleStyle, 
     desktopWrapperStyle,
@@ -56,7 +55,6 @@ export default class Widget extends Component {
                             <div style={{display: 'flex', alignItems: 'center', padding: '0px 10px 0px 0px'}}>
                                 {isChatOpen ? conf.titleOpen : conf.titleClosed}
                             </div>
-                            <ArrowIcon isOpened={isChatOpen}/>
                         </div>
                         :
                         <ChatTitleMsg onClick={this.onClick} conf={conf}/>

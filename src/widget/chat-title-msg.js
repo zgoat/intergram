@@ -15,8 +15,8 @@ export default class ChatTitleMsg extends Component {
                         position: 'absolute',
                         fontSize: '14px',
                         top: 0,
-                        right: '90px',
-                        marginTop: '23px',
+                        right: '10px',
+                        //marginTop: '23px',
                         borderRadius: '5px',
                         padding: '8px 10px',
                         boxShadow: '#8e8d8d -3px 2px 20px',
@@ -35,61 +35,6 @@ export default class ChatTitleMsg extends Component {
                             borderLeft: '10px solid '+conf.mainColor
                         }}
                     />
-                </div>
-                <div 
-                    className="desktop-closed-message-avatar"
-                    style={{
-                        background: '#fff',
-                        display: 'block',
-                        position: 'absolute',
-                        top: '10px',
-                        right: '10px',
-                        height: '60px',
-                        width: '60px',
-                        borderRadius: '999px',
-                        boxShadow: '#8e8d8d -3px 2px 20px',
-                        border: '2px solid '+conf.mainColor
-                    }}
-                >
-                    {(conf.closedChatAvatarUrl === '') ?
-                        <svg style={{
-                                width: '100%',
-                                height: 'auto',
-                                borderRadius: '999px'
-                            }}
-                            fill="#000000" height="24" viewBox="0 0 24 24" width="24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 21.859c0 2.281-1.5 4.141-3.328 4.141h-13.344c-1.828 0-3.328-1.859-3.328-4.141 0-4.109 1.016-8.859 5.109-8.859 1.266 1.234 2.984 2 4.891 2s3.625-0.766 4.891-2c4.094 0 5.109 4.75 5.109 8.859zM16 8c0 3.313-2.688 6-6 6s-6-2.688-6-6 2.688-6 6-6 6 2.688 6 6z"></path>
-                        </svg>
-                        :
-                        <img 
-                            src={conf.closedChatAvatarUrl} 
-                            alt="Avatar"
-                            style={{
-                                width: '100%',
-                                height: 'auto',
-                                borderRadius: '999px'
-                            }}
-                        />
-                    }
-                    <div
-                        style={{
-                            background: '#d0021b',
-                            width: '20px',
-                            height: '20px',
-                            borderRadius: '999px',
-                            position: 'absolute',
-                            right: '-5px',
-                            bottom: '-5px',
-                            textAlign: 'center',
-                            color: '#fff',
-                            fontWeight: 600,
-                            fontSize: '0.8em',
-                            lineHeight: '20px'
-                        }}
-                    >
-                        1
-                    </div>
                 </div>
             </div>
         );
